@@ -1,0 +1,40 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    &:hover {
+        color: #909;
+    }
+}
+
+.content {
+    width: 50%;
+}
+
+.overlay {
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background-color: rgba($color: #ccc, $alpha: 0.5);
+
+    .popup {
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: auto;
+        text-align: center;
+        border: 2px solid #888;
+        border-radius: 10px;
+        padding: 30px;
+    }
+}
